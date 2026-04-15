@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --red: #d62828;
+    --red-dk: #a01e1e;
+    --white: #f8f5f0;
+    --off: #ede9e3;
+    --text: #1a1a1a;
+    --muted: #888880;
+    --border: #d8d4ce;
+    --serif: 'Playfair Display', Georgia, serif;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--white);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* -- Nav -- */
+nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    background: var(--white);
+    border-bottom: 2px solid var(--text);
+}
+
+.nav-logo {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--red);
+    text-decoration: none;
+}
+
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--red); }
+
+/* -- Sections -- */
+section {
+    padding: 4.5rem 2.5rem;
+    border-bottom: 2px solid var(--text);
+}
+
+#skills {background: var(--off); }
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+.section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    letter-spacing: -0.02em;
+}
+
+
