@@ -75,4 +75,57 @@ section {
     letter-spacing: -0.02em;
 }
 
+/* -- Timeline -- */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+}
+.timeline-date {
+    padding: 1.75rem;
+    border-right: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+}
+.timeline-content { padding: 1.75rem; }
+.timeline-role {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    margin-bottom: 0.2rem;
+}
+.timeline-company {
+    color: var(--red);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.65rem;
+}
+.timeline-desc { color: var(--muted); line-height: 1.75; font-size: 13px; }
 
+/* -- Contact -- */
+#contact { text-align: center; background: var(--red); }
+#contact .section-title { color: var(--white); }
+#contact .section-header { justify-content: center; border-bottom: rgba(255, 255, 255, 0.2); }
+
+.contact-sub {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 44ch;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+#contact .btn-primary {
+    background: var(--white);
+    color: var(--red);
+    border-color: var(--white);
+}
+#contact .btn-primary:hover { background: var(--off); border-color: var(--off); }
+#contact .btn-outline {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+#contact .btn-outline:hover { border-color: var(--white); }
