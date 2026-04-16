@@ -99,7 +99,7 @@ nav {
 
 .hero-desc {
     color: var(--muted);
-    max-width: 44ch;
+    max-width: 100ch;
     line-height: 1.85;
     margin-bottom: 2.5rem;
 }
@@ -139,8 +139,6 @@ section {
     border-bottom: 2px solid var(--text);
 }
 
-#skills { background: var(--off); }
-
 .section-header {
     display: flex;
     align-items: baseline;
@@ -153,7 +151,14 @@ section {
     letter-spacing: -0.02em;
 }
 
+/* -- About Me -- */
+#about-me { background: var(--off); }
+
+.about-me-desc { color: var(--muted); line-height: 1.75; font-size: 13px; }
+
 /* -- Skills -- */
+#skills { background: var(--off); }
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
