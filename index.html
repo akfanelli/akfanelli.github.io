@@ -31,6 +31,22 @@
             <div class="section-header">
                 <h2 class="section-title">Skills & Stack</h2>
             </div>
+            <div class="skills-grid">
+                <div class="skill-group fade-in">
+                    <div class="skill-group-title">Languages</div>
+                    <ul class="skill-list">
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skill-group fade-in">
+                    <div class="skill-group-title">Game Engine</div>
+                    <ul class="skill-list">
+                        <li>Unity 2D/3D</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Experience -->
@@ -79,5 +95,18 @@
         <footer>
             <span>2026 Annie Fanelli - Built with HTML and CSS</span>
         </footer>
+
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        </script>
     </body>
 </html>
